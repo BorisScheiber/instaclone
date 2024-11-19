@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="icon" sizes="16x16" type="image/png" href="./img/favicon/16x16.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="./img/favicon/32x32.png">
+    <link rel="icon" sizes="64x64" type="image/png" href="./img/favicon/64x64.png">
+</head>
+
+<body onload="init()">
+    <main class="main">
+        <nav class="side-bar">
+
+            <div class="nav-top">
+                <div class="nav-top-insta">
+                    <a href="#">
+                        <img src="./img/icons/kisspng-web-typography-script-typeface-font-instagram-font-5b361c681699a3.8219672315302728720926.png"
+                            alt="">
+                        <img src="./img/icons/instagram.png" alt="">
+                    </a>
+                </div>
+
+                <div class="nav-top-list">
+                    <a href="#"><img src="./img/icons/zuhause.png" alt=""><span class="nav-text">Home</span></a>
+                    <a href="#"><img src="./img/icons/suche.png" alt=""><span class="nav-text">Search</span></a>
+                    <a href="#"><img src="./img/icons/kompass.png" alt=""><span class="nav-text">Explore</span></a>
+                    <a href="#"><img src="./img/icons/video.png" alt=""><span class="nav-text">Reels</span></a>
+                    <a href="#"><img src="./img/icons/senden.png" alt=""><span class="nav-text">Messages</span></a>
+                    <a href="#"><img src="./img/icons/heart-regular.svg" alt=""><span
+                            class="nav-text">Notifications</span></a>
+                    <a href="#"><img src="./img/icons/tab.png" alt=""><span class="nav-text">Create</span></a>
+                    <a href="#"><img src="./img/icons/profile.jpg" alt=""><span class="nav-text">Profile</span></a>
+                </div>
+            </div>
+
+            <div class="nav-bottom-list">
+                <a href="#"><img src="./img/icons/threads.png" alt=""><span class="nav-text">Threads</span></a>
+                <a href="#"><img src="./img/icons/menu.png" alt=""><span class="nav-text">More</span></a>
+
+            </div>
+
+        </nav>
+
+        <nav class="bottom-bar">
+
+            <a href="#"><img src="./img/icons/zuhause.png" alt=""></a>
+            <a href="#"><img src="./img/icons/kompass.png" alt=""></a>
+            <a href="#"><img src="./img/icons/video.png" alt=""></a>
+            <a href="#"><img src="./img/icons/tab.png" alt=""></a>
+            <a href="#"><img src="./img/icons/senden.png" alt=""></a>
+            <a href="#"><img src="./img/icons/profile.jpg" alt=""></a>
+        </nav>
+
+        <section class="main-content">
+            <div class="wrapper-content">
+
+                <div class="story-bar">
+                    <a href="#">For you</a>
+                    <a href="#">Following</a>
+                    <img src="./img/icons/chevron-down-solid.svg" alt="">
+
+                    <button></button>
+                    <button></button>
+                </div>
+
+                <div class="story-profiles">
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/icons/profile.jpg" alt="">
+                        </div>
+                        <span>boris_only</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/5.jpg" alt="">
+                        </div>
+                        <span>andi.bar</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/6.jpg" alt="">
+                        </div>
+                        <span>pure_philosophy_</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/15.jpg" alt="">
+                        </div>
+                        <span>jaeniee.x</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/1.jpg" alt="">
+                        </div>
+                        <span>sandro.2106</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/13.jpg" alt="">
+                        </div>
+                        <span>roumii</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/11.jpg" alt="">
+                        </div>
+                        <span>pati4961</span>
+                    </a>
+                    <a href="#">
+                        <div class="profile-pic">
+                            <img src="./img/story_profiles/8.jpg" alt="">
+                        </div>
+                        <span>angelo.platzer_</span>
+                    </a>
+
+
+                </div>
+
+                <div class="feed-section" id="content"></div>
+
+            </div>
+
+            <div class="suggestions">
+
+
+                <div class="my-profile">
+                    <img src="./img/icons/profile.jpg" alt="">
+                    <div class="username">
+                        <a href="#">boris_only</a>
+                        <span>Bobby</span>
+                    </div>
+                    <a class="switch-follow" href="#">Switch</a>
+
+                </div>
+
+                <div class="suggestions-foryou">
+                    <span>Suggested for you</span>
+                    <a href="#">See All</a>
+                </div>
+
+                <div class="suggested-content">
+                    <div class="my-profile">
+                        <img src="./img/suggestion_profiles/2.jpg" alt="">
+                        <div class="suggest-username">
+                            <a href="#">chrisrogers44</a>
+                            <span>Suggested for you</span>
+                        </div>
+                        <a class="switch-follow" href="#">Follow</a>
+                    </div>
+
+                    <div class="my-profile">
+                        <img src="./img/suggestion_profiles/6.jpg" alt="">
+                        <div class="suggest-username">
+                            <a href="#">moni.s</a>
+                            <span>Suggested for you</span>
+                        </div>
+                        <a class="switch-follow" href="#">Follow</a>
+                    </div>
+
+                    <div class="my-profile">
+                        <img src="./img/suggestion_profiles/9.jpg" alt="">
+                        <div class="suggest-username">
+                            <a href="#">josephfree</a>
+                            <span>Suggested for you</span>
+                        </div>
+                        <a class="switch-follow" href="#">Follow</a>
+                    </div>
+
+                    <div class="my-profile">
+                        <img src="./img/suggestion_profiles/13.jpg" alt="">
+                        <div class="suggest-username">
+                            <a href="#">tamara.koell</a>
+                            <span>Suggested for you</span>
+                        </div>
+                        <a class="switch-follow" href="#">Follow</a>
+                    </div>
+
+                    <div class="my-profile">
+                        <img src="./img/suggestion_profiles/14.jpg" alt="">
+                        <div class="suggest-username">
+                            <a href="#">mellyxcore</a>
+                            <span>Suggested for you</span>
+                        </div>
+                        <a class="switch-follow" href="#">Follow</a>
+                    </div>
+
+
+
+                </div>
+
+                <div class="imprint">
+                    <a href="#">About</a><span class="imprint-seperator">·</span>
+                    <a href="#">Help</a><span class="imprint-seperator">·</span>
+                    <a href="#">Press</a><span class="imprint-seperator">·</span>
+                    <a href="#">API</a><span class="imprint-seperator">·</span>
+                    <a href="#">Jobs</a><span class="imprint-seperator">·</span>
+                    <a href="#">Privacy</a><span class="imprint-seperator">·</span>
+                    <a href="#">Terms</a><span class="imprint-seperator">·</span>
+                    <a href="#">Locations</a><span class="imprint-seperator">·</span>
+                    <a href="#">Language</a><span class="imprint-seperator">·</span>
+                    <a href="#">BS Verified</a>
+                </div>
+
+                <span class="copyright">2024 INSTACLON FROM BS</span>
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
